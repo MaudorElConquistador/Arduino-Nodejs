@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/si.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  </head>
+  <script src="JS/anime.min.js"></script>
+  <script src="JS/socket.io.js"></script>
+  <script src="JS/socketWeb.js"></script>
+  <script src="JS/animacion.js" type="module"></script> 
+  <header>
+    <nav class="nav-extended nav-full-header black">
+      <div class="nav-wrapper container center-align">
+        <a href="index.html" class="brand-logo">Practica Arduino</a>
+      </div>
+      <br>
+    </nav>
+  </header>
+  <body class="row">
+    <div class="container">
+      <B><h1><%= title %></h1></B>
+      <B>Practica hecha con WebSockets, Wemos D1 mini pro y anime js</B>
+      <br>
+      <div class="col s5" id="contenedor">
+        <div id="termo" class="pulse-button">
+          <img id ='termo2' src="IMG/Termoblock.png">
+        </div>
+      </div>
+      <div class="col s4 offset-s2">
+        <h2 id="num"></h2>
+      </div>
+    </div>
+  </body>
+</html>
